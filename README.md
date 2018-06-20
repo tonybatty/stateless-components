@@ -3,9 +3,9 @@
 **Exercise**
 
 * Working in pairs, fork and clone this repo
+* Rewrite all components without state or lifecycle methods as functional components
+* Use destructuring assignment to split out props to functional components into own variables
+* Add PropTypes to all components which receive `props`
 * Add the following rules to your `.eslintrc`
   * [https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md)
   * [https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md)
-* Rewrite all components without state or lifecycle methods as functional components
-* Use destructuring assignment to split out props to functional components into own variables
-* Add PropTypes to all components which use them
