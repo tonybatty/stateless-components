@@ -1,4 +1,6 @@
-# Redux demo
+# You Tube player
+
+This repo contains a YouTube viewer. You can use it to search videos on YouTube and play videos from search results.
 
 **Exercise**
 

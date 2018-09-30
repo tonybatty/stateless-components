@@ -4,8 +4,8 @@ class SearchResult extends React.Component {
   render(){
     const { snippet } = this.props.result;
     const { videoId } = this.props.result.id;
-    const { description, title } = snippet;
-    const { height, width, url } = this.props.result.snippet.thumbnails.default;
+    const { description, title, thumbnails } = snippet;
+    const { height, width, url } = thumbnails.default;
     return (
       <li
         className="result-item"

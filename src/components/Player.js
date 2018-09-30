@@ -4,25 +4,16 @@ import PropTypes from 'prop-types';
 class Player extends React.Component {
   constructor(props){
     super(props);
-
-    this.onPlayerStateChange = this.onPlayerStateChange.bind(this);
   }
 
   componentDidMount(){
-    window.onYouTubeIframeAPIReady = function(){
+    window.onYouTubeIframeAPIReady = () => {
       this.player = new YT.Player('player', {
         height: '390',
         width: '640',
-        videoId: this.props.videoId,
-        events: {
-          onStateChange: this.onPlayerStateChange
-        }
+        videoId: this.props.videoId
       });
-    }.bind(this);
-  }
-
-  onPlayerStateChange( event ){
-
+    };
   }
 
   componentWillReceiveProps(nextProps){
@@ -30,10 +21,6 @@ class Player extends React.Component {
     if(videoId !== this.props.videoId){
       this.player.loadVideoById( videoId );
     }
-  }
-
-  shouldComponentUpdate(){
-    return false;
   }
 
   render(){
