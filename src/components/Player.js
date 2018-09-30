@@ -2,10 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 class Player extends React.Component {
-  constructor(props){
-    super(props);
-  }
-
   componentDidMount(){
     window.onYouTubeIframeAPIReady = () => {
       this.player = new YT.Player('player', {
